@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+h1{
+    font-size: 100px;
+    color: aliceblue;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+
+.btn{
+    background-color: white;
+    color: aliceblue ;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 25px;
+    border: 4px  white solid;
+    white-space: nowrap;
+    text-decoration: none;
+    
+}
+
+.btn:hover{
+    background-color:beige;
+    color: black;
+    transition: 1s background-color;
+}
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: lightpink;
+    background-image: url("https://inventstore.in/staging/wp-content/uploads/2023/04/Product-Red-scaled-600x600.webp");
+    background-size: cover;
+    
+}
+
+.split.right{
+    position: absolute;
+    right: 0%;
+    background-color: lightblue;
+    background-image: url("https://images.samsung.com/is/image/samsung/p6pim/in/2401/gallery/in-galaxy-s24-plus-sm-s926bzvcins-thumb-539572998?$240_240_PNG$");
+    background-size: cover;
+    
+
+}
+
+.active-left .left{
+    width: 75%;
+}
+.active-left .right{
+    width: 25%;
+}
+
+.active-right .left{
+    width: 25%;
+}
+
+.active-right .right{
+    width: 75%;
+}
+
+.left , .right{
+    transition: width 2s ease-in-out ;
+}
